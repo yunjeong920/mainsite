@@ -1,0 +1,523 @@
+@charset "UTF-8";
+body{ font-family: 'GmarketSansMedium', 'Montserrat', sans-serif; color: #4a4a4a; }
+body{ color: #4a4a4a; }
+*{ margin: 0; padding: 0; box-sizing: border-box;}
+ul,ol{ list-style: none; }
+a{ text-decoration: none; color: #4a4a4a; }
+
+html{
+	color:#000;
+	background:#FFF;
+}
+
+/* 플렉스 컨테이너에 적용. 플렉스 컨테이너 생성
+display: -webkit-box;
+display: -ms-flexbox;
+display: flex;
+
+플렉스 컨테이너에 적용. 주축 column 설정.
+-webkit-box-orient: vertical;
+-ms-flex-direction: column;
+flex-direction: column;
+
+플렉스 컨테이너에 적용. 아이템 교차축 center 정렬.
+-webkit-box-align: center;
+-ms-flex-align: center;
+align-items: center;
+
+플렉스 컨테이너에 적용. 아이템 주축 center 정렬.
+-webkit-box-pack: center;
+-ms-flex-pack: center;
+justify-content: center;
+
+플렉스 컨테이너에 적용. 아이템 주축 space-between 정렬.
+-webkit-box-pack: justify;
+-ms-flex-pack: justify;
+justify-content: space-between;
+
+플렉스 아이템에 적용. 확장 지수 설정.
+-webkit-box-flex: 1;
+-ms-flex: 1;
+flex-grow: 1;
+
+플렉스 컨테이너에 적용. 주축 row 설정.
+-webkit-box-orient: horizontal;
+-ms-flex-direction: row;
+flex-direction: row;
+
+플렉스 컨테이너에 적용. 주축 row-reverse 설정.
+-webkit-box-orient: horizontal;
+-webkit-box-direction: reverse;
+-ms-flex-direction: row-reverse;
+flex-direction: row-reverse;
+
+플렉스 컨테이너에 적용. 주축 column-reverse 설정.
+-webkit-box-orient: vertical;
+-webkit-box-direction: reverse;
+-ms-flex-direction: column-reverse;
+flex-direction: column-reverse;
+
+플렉스 컨테이너에 적용. 감싸기(줄바꿈) 금지 설정.
+-webkit-box-lines: single;
+-ms-flex-wrap: nowrap;
+flex-wrap: nowrap;
+
+플렉스 컨테이너에 적용. 감싸기(줄바꿈) 설정. 확인 결과 안드로이드 2.1~4.3 아래 속성 지원 안 함.
+<del>-webkit-box-lines: multiple;</del>
+-ms-flex-wrap: wrap;
+flex-wrap: wrap;
+
+플렉스 아이템에 적용. 아이템 정렬 순서 설정. 확인 결과 안드로이드 2.1~4.3 아래 속성 지원 안 함.
+<del>-webkit-box-ordinal-group: 1;</del>
+-ms-flex-order: 1;
+order: 1;
+
+플렉스 컨테이너에 적용. 아이템 주축 start 정렬.
+-webkit-box-pack: start;
+-ms-flex-pack: start;
+justify-content: flex-start;
+
+플렉스 컨테이너에 적용. 아이템 주축 end 정렬.
+-webkit-box-pack: end;
+-ms-flex-pack: end;
+justify-content: flex-end;
+
+플렉스 컨테이너에 적용. 아이템 교차축 start 정렬.
+-webkit-box-align: start;
+-ms-flex-align: start;
+align-items: flex-start;
+
+플렉스 컨테이너에 적용. 아이템 교차축 end 정렬.
+-webkit-box-align: end;
+-ms-flex-align: end;
+align-items: flex-end;
+
+플렉스 컨테이너에 적용. 아이템 교차축 stretch 정렬.
+-webkit-box-align: stretch;
+-ms-flex-align: stretch;
+align-items: stretch;
+
+플렉스 컨테이너에 적용. 아이템 교차축 baseline 정렬.
+-webkit-box-align: baseline;
+-ms-flex-align: baseline;
+align-items: baseline; */
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Monoton&display=swap');
+@font-face {
+    font-family: 'Y_Spotlight';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts-20-12@1.0/Y_Spotlight.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'GmarketSansBold';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansBold.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'GmarketSansMedium';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansMedium.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'GmarketSansLight';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansLight.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+<link rel="stylesheet" type="text/css" href="https://cdn.rawgit.com/moonspam/NanumSquare/master/nanumsquare.css">
+.nanumsquare {
+    font-family: 'NanumSquare', sans-serif !important;
+}
+@font-face {
+    font-family: 'NEXON Lv1 Gothic OTF';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-04@2.1/NEXON Lv1 Gothic OTF.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'NEXON Lv2 Gothic Bold';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-04@2.1/NEXON Lv2 Gothic Bold.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'ELAND_Choice_M';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts-20-12@1.0/ELAND_Choice_M.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montaga&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+@font-face {
+    font-family: 'Arita-dotum-Medium';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_one@1.0/Arita-dotum-Medium.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'HangeulNuri-Bold';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_three@1.0/HangeulNuri-Bold.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+/*
+	TODO remove settings on BODY since we can't namespace it.
+*/
+/*
+	TODO test putting a class on HEAD.
+		- Fails on FF.
+*/
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,legend,input,textarea,p,blockquote,
+th,td {margin:0;padding:0;}table {border-collapse:collapse;border-spacing:0;}
+fieldset,img {border:0;}
+/*
+	TODO think about hanlding inheritence differently, maybe letting IE6 fail a bit...
+*/
+address,caption,cite,code,dfn,em,strong,th,var {font-style:normal;font-weight:normal;}
+ol,ul,li,a {list-style:none;}
+caption,
+th {text-align:left;}
+h1,h2,h3,h4,h5,h6 {font-size:100%;font-weight:normal;}
+q:before,q:after {content:'';}
+abbr,acronym {border:0;font-variant:normal;}
+/* to preserve line-height and selector appearance */
+sup {vertical-align:text-top;}
+sub {vertical-align:text-bottom;}
+input,textarea,select {font-family:inherit;font-size:inherit;font-weight:inherit;}
+/*to enable resizing for IE*/
+input,textarea,select {*font-size:100%;}
+/*because legend doesn't inherit in IE */
+legend {color:#000;}
+
+.scrollDisable { position: absolute; left: 0; height: 100%; min-height: 100%; overflow: hidden !important; touch-action: none; }
+
+* { letter-spacing: -0.025em; box-sizing: border-box; }
+
+select { font-family: inherit; -webkit-appearance: none; -moz-appearance: none; appearance: none; }
+
+select::-ms-expand { display: none; }
+
+ul, ol, li { list-style: none; }
+
+input { font-family: inherit; -webkit-appearance: none; -moz-appearance: none; appearance: none; }
+
+input::-ms-clear { display: none; }
+
+input:focus { outline: none; }
+
+button:focus { outline: none; }
+
+img { -ms-interpolation-mode: bicubic !important; }
+
+html { font-size: 100%; -webkit-text-size-adjust: none; -ms-text-size-adjust: none; }
+
+a { text-decoration: none; }
+
+mark { line-height: initial; }
+
+input[type="text"],
+input[type="password"],
+input[type="email"],
+input[type="search"],
+input[type="image"],
+input[type="tel"],
+button,
+select,
+textarea{-webkit-border-radius:0;-webkit-appearance:none;}
+
+input, textarea, button {-webkit-appearance:none; -moz-appearance:none; appearance:none;}
+
+input, textarea, button, select {-webkit-border-radius:0; -moz-border-radius:0; -o-border-radius:0; border-radius:0;}
+
+/* 폰트 컬러 */
+.c-black{color:#000000;}
+.c-white{color:#ffffff;}
+.c-3{color:#6e73dd;}
+.c-4{color:#ff194a;}
+.c-5{color:#ccc;}
+.c-6{color:#666;}
+
+.bgcolor{ background: #4a4a4a; }
+/* 간격 */
+.letter{letter-spacing: 0.2em;}
+
+/* 폰트사이즈 */
+.noto-font { font-family: 'Noto Sans KR'; }
+
+.montaga-font { font-family: 'Montaga'; font-weight: 400; }
+
+.montserrat-font { font-family: 'Montserrat'; }
+/* 둥근 영어폰트 */
+.gmarket-font { font-family: 'GmarketSansMedium'; }
+
+.nanum-font{ font-family: 'NanumSquare', sans-serif; }
+
+.ari-font{ font-family: 'Arita-dotum-Medium'; }
+
+.nexon-font{ font-family: 'NEXON Lv1 Gothic OTF'; }
+
+/*font-size*/
+.fs-10 { font-size: 10px; }
+
+.fs-12 { font-size: 12px; }
+
+.fs-14 { font-size: 14px; }
+
+.fs-16 { font-size: 16px; }
+
+.fs-18 { font-size: 18px; }
+
+.fs-20 { font-size: 20px; }
+
+.fs-22 { font-size: 22px; }
+
+.fs-24 { font-size: 24px; }
+
+.fs-26 { font-size: 26px; }
+
+.fs-28 { font-size: 28px; }
+
+.fs-30 { font-size: 30px; }
+
+.fs-32 { font-size: 32px; }
+
+.fs-34 { font-size: 34px; }
+
+.fs-36 { font-size: 36px; }
+
+.fs-38 { font-size: 38px; }
+
+.fs-40 { font-size: 40px; }
+
+.fs-42 { font-size: 42px; }
+
+.fs-44 { font-size: 44px; }
+
+.fs-46 { font-size: 46px; }
+
+.fs-48 { font-size: 48px; }
+
+.fs-50 { font-size: 50px; }
+
+.fs-52 { font-size: 52px; }
+
+.fs-54 { font-size: 54px; }
+
+.fs-56 { font-size: 56px; }
+
+.fs-58 { font-size: 58px; }
+
+.fs-60 { font-size: 60px; }
+
+.fs-62 { font-size: 62px; }
+
+.fs-64 { font-size: 64px; }
+
+.fs-66 { font-size: 66px; }
+
+.fs-68 { font-size: 68px; }
+
+.fs-70 { font-size: 70px; }
+
+.fs-72 { font-size: 72px; }
+
+.fs-74 { font-size: 74px; }
+
+.fs-76 { font-size: 76px; }
+
+.fs-78 { font-size: 78px; }
+
+.fs-80 { font-size: 80px; }
+
+.fs-82 { font-size: 82px; }
+
+.fs-84 { font-size: 84px; }
+
+.fs-86 { font-size: 86px; }
+
+.fs-88 { font-size: 88px; }
+
+.fs-90 { font-size: 90px; }
+
+.fs-92 { font-size: 92px; }
+
+.fs-94 { font-size: 94px; }
+
+.fs-96 { font-size: 96px; }
+
+.fs-98 { font-size: 98px; }
+
+.fs-100 { font-size: 100px; }
+
+@media all and (max-width: 1200px) {
+	.fs-10 { font-size: 8px; }
+  .fs-12 { font-size: 10px; }
+  .fs-14 { font-size: 12px; }
+  .fs-16 { font-size: 14px; }
+  .fs-18 { font-size: 16px; }
+  .fs-20 { font-size: 18px; }
+  .fs-22 { font-size: 20px; }
+  .fs-24 { font-size: 22px; }
+  .fs-26 { font-size: 24px; }
+  .fs-28 { font-size: 26px; }
+  .fs-30 { font-size: 28px; }
+  .fs-32 { font-size: 30px; }
+  .fs-34 { font-size: 32px; }
+  .fs-36 { font-size: 34px; }
+  .fs-38 { font-size: 36px; }
+  .fs-40 { font-size: 38px; }
+  .fs-42 { font-size: 40px; }
+  .fs-44 { font-size: 42px; }
+  .fs-46 { font-size: 44px; }
+  .fs-48 { font-size: 46px; }
+  .fs-50 { font-size: 48px; }
+  .fs-52 { font-size: 50px; }
+  .fs-54 { font-size: 52px; }
+  .fs-56 { font-size: 54px; }
+  .fs-58 { font-size: 56px; }
+  .fs-60 { font-size: 58px; }
+  .fs-62 { font-size: 60px; }
+  .fs-64 { font-size: 62px; }
+  .fs-66 { font-size: 64px; }
+  .fs-68 { font-size: 66px; }
+  .fs-70 { font-size: 68px; }
+  .fs-72 { font-size: 70px; }
+  .fs-74 { font-size: 72px; }
+  .fs-76 { font-size: 74px; }
+  .fs-78 { font-size: 76px; }
+  .fs-80 { font-size: 78px; }
+  .fs-82 { font-size: 80px; }
+  .fs-84 { font-size: 82px; }
+  .fs-86 { font-size: 84px; }
+  .fs-88 { font-size: 86px; }
+  .fs-90 { font-size: 88px; }
+  .fs-92 { font-size: 90px; }
+  .fs-94 { font-size: 92px; }
+  .fs-96 { font-size: 94px; }
+  .fs-98 { font-size: 96px; }
+  .fs-100 { font-size: 98px; }
+  }
+
+@media all and (max-width: 600px) {
+	.fs-10 { font-size: 7px; }
+  .fs-12 { font-size: 8px; }
+  .fs-14 { font-size: 9px; }
+  .fs-16 { font-size: 10px; }
+  .fs-18 { font-size: 12px; }
+  .fs-20 { font-size: 13px; }
+  .fs-22 { font-size: 14px; }
+  .fs-24 { font-size: 16px; }
+  .fs-26 { font-size: 17px; }
+  .fs-28 { font-size: 18px; }
+  .fs-30 { font-size: 20px; }
+  .fs-32 { font-size: 21px; }
+  .fs-34 { font-size: 22px; }
+  .fs-36 { font-size: 23px; }
+  .fs-38 { font-size: 25px; }
+  .fs-40 { font-size: 26px; }
+  .fs-42 { font-size: 27px; }
+  .fs-44 { font-size: 29px; }
+  .fs-46 { font-size: 30px; }
+  .fs-48 { font-size: 31px; }
+  .fs-50 { font-size: 33px; }
+  .fs-52 { font-size: 34px; }
+  .fs-54 { font-size: 35px; }
+  .fs-56 { font-size: 36px; }
+  .fs-58 { font-size: 38px; }
+  .fs-60 { font-size: 39px; }
+  .fs-62 { font-size: 40px; }
+  .fs-64 { font-size: 42px; }
+  .fs-66 { font-size: 43px; }
+  .fs-68 { font-size: 44px; }
+  .fs-70 { font-size: 46px; }
+  .fs-72 { font-size: 47px; }
+  .fs-74 { font-size: 48px; }
+  .fs-76 { font-size: 49px; }
+  .fs-78 { font-size: 51px; }
+  .fs-80 { font-size: 52px; }
+  .fs-82 { font-size: 53px; }
+  .fs-84 { font-size: 55px; }
+  .fs-86 { font-size: 56px; }
+  .fs-88 { font-size: 57px; }
+  .fs-90 { font-size: 59px; }
+  .fs-92 { font-size: 60px; }
+  .fs-94 { font-size: 61px; }
+  .fs-96 { font-size: 62px; }
+  .fs-98 { font-size: 64px; }
+  .fs-100 { font-size: 65px; }
+   }
+
+/* @media all and (max-width: 500px) {
+	.fs-10 { font-size: 5px; }
+  .fs-12 { font-size: 6px; }
+  .fs-14 { font-size: 7px; }
+  .fs-16 { font-size: 8px; }
+  .fs-18 { font-size: 9px; }
+  .fs-20 { font-size: 10px; }
+  .fs-22 { font-size: 11px; }
+  .fs-24 { font-size: 12px; }
+  .fs-26 { font-size: 13px; }
+  .fs-28 { font-size: 14px; }
+  .fs-30 { font-size: 15px; }
+  .fs-32 { font-size: 16px; }
+  .fs-34 { font-size: 17px; }
+  .fs-36 { font-size: 18px; }
+  .fs-38 { font-size: 19px; }
+  .fs-40 { font-size: 20px; }
+  .fs-42 { font-size: 21px; }
+  .fs-44 { font-size: 22px; }
+  .fs-46 { font-size: 23px; }
+  .fs-48 { font-size: 24px; }
+  .fs-50 { font-size: 25px; }
+  .fs-52 { font-size: 26px; }
+  .fs-54 { font-size: 27px; }
+  .fs-56 { font-size: 28px; }
+  .fs-58 { font-size: 29px; }
+  .fs-60 { font-size: 30px; }
+  .fs-62 { font-size: 31px; }
+  .fs-64 { font-size: 32px; }
+  .fs-66 { font-size: 33px; }
+  .fs-68 { font-size: 34px; }
+  .fs-70 { font-size: 35px; }
+  .fs-72 { font-size: 36px; }
+  .fs-74 { font-size: 37px; }
+  .fs-76 { font-size: 38px; }
+  .fs-78 { font-size: 39px; }
+  .fs-80 { font-size: 40px; }
+  .fs-82 { font-size: 41px; }
+  .fs-84 { font-size: 42px; }
+  .fs-86 { font-size: 43px; }
+  .fs-88 { font-size: 44px; }
+  .fs-90 { font-size: 45px; }
+  .fs-92 { font-size: 46px; }
+  .fs-94 { font-size: 47px; }
+  .fs-96 { font-size: 48px; }
+  .fs-98 { font-size: 49px; }
+  .fs-100 { font-size: 50px; }
+   } */
+
+/*font-Weight*/
+.fw-100 { font-weight: 100; }
+
+.fw-200 { font-weight: 200; }
+
+.fw-300 { font-weight: 300; }
+
+.fw-400 { font-weight: 400; }
+
+.fw-500 { font-weight: 500; }
+
+.fw-600 { font-weight: 600; }
+
+.fw-700 { font-weight: 700; }
+
+.fw-800 { font-weight: 800; }
+
+.fw-900 { font-weight: 900; }
