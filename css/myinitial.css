@@ -132,6 +132,12 @@ align-items: baseline; */
     font-family: 'NanumSquare', sans-serif !important;
 }
 @font-face {
+    font-family: 'NanumSquareRound';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_two@1.0/NanumSquareRound.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
     font-family: 'NEXON Lv1 Gothic OTF';
     src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-04@2.1/NEXON Lv1 Gothic OTF.woff') format('woff');
     font-weight: normal;
@@ -256,6 +262,7 @@ input, textarea, button, select {-webkit-border-radius:0; -moz-border-radius:0; 
 .montserrat-font { font-family: 'Montserrat'; }
 /* 둥근 영어폰트 */
 .gmarket-font { font-family: 'GmarketSansMedium'; }
+.glight{ font-family: 'GmarketSansLight'; font-weight: bold;}
 
 .nanum-font{ font-family: 'NanumSquare', sans-serif; }
 

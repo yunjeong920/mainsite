@@ -91,7 +91,7 @@ div.bl-panel-items > div > div {
 	position: absolute;
 	width: 1400px;
 	margin: 0 auto;
-	top: 25%;
+	top: 20%;
 	left: 30px;
 	right: 30px;
 	bottom: 30px;
@@ -170,16 +170,14 @@ div.bl-panel-items > div > div {
 	opacity: 1;
 	bottom: 90px;
 	pointer-events: auto;
+	height: 500px;
+	overflow: hidden;
 }
 
 div.bl-panel-items > div > div h3 {
 	font-size: 2.4em;
 	font-weight: 300;
 	margin: 0 0 20px 0;
-}
-
-div.bl-panel-items > div > div p {
-	font-size: 1.3em;
 }
 
 div.bl-panel-items > div > div img {
@@ -242,7 +240,7 @@ div.bl-panel-items nav span.bl-next-work {
 
 div.bl-panel-items.bl-panel-items-show nav {
 	opacity: 1;
-	top: -300px;
+	top: -180px;
 }
 
 div.bl-panel-items > div.bl-show-work {
