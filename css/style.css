@@ -15,6 +15,10 @@
   font-style: normal;
 }
 
+.mobile{
+  display: none;
+}
+
 .container {
   width: 100%;
   height: 100vh;
@@ -42,7 +46,7 @@
 }
 
 .profile .wrap {
-  width: 1200px;
+  width: 1000px;
   height: 100%;
   text-align: center;
   padding-top: 50px;
@@ -70,7 +74,7 @@
 }
 
 .profile-left .pro-img img {
-  width: 280px;
+  width: 200px;
   height: auto;
 }
 
@@ -287,7 +291,6 @@ div.bl-panel-items.bl-panel-items-show nav span.cancel:hover {
 
 .content2 {
   top: 15%;
-  padding: 0;
 }
 
 .bl-content>ul li a {
@@ -412,4 +415,108 @@ div.bl-panel-items.bl-panel-items-show nav span.cancel:hover {
   color: #fff;
   background: #4a4a4a;
   transition: 0.5s;
+}
+
+.port{
+  width: 100%;
+  height: 100%;
+}
+
+@media screen and (max-width: 1200px) {
+  .bl-content, div.bl-panel-items > div > div{
+    max-width: 1200px;
+  }
+  .bl-content h2{
+    max-width: 1200px;
+  }
+  .bl-content > ul{
+    max-width: 1200px;
+  }
+}
+
+@media screen and (max-width: 960px) {
+  .bl-content, div.bl-panel-items > div > div{
+    max-width: 960px;
+  }
+  .bl-content > ul{
+    max-width: 960px;
+  }
+}
+
+@media screen and ( max-width: 920px ) {
+  .pc{display: none;}
+  .mobile{display: block;}
+  .profile a>img{
+    width: 90px;
+  }
+  .profile .wrap{
+    max-width: 850px;
+    width: 100%;
+    padding-top: 100px;
+  }
+  .profile .wrap .page{
+    position: relative;
+  }
+  .profile .wrap .page .pro-wrap{
+    justify-content: center;
+  }
+  .pro-wrap{
+    width: 100%;
+  }
+.tabs{
+    width: 100%;
+    height: 30px;
+    line-height: 30px;
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 53.5%;
+    cursor: pointer;
+  }
+ .tabs li{
+    background: none;
+    color: skyblue;
+    width: 100px;
+    cursor: pointer;
+  }
+.tabs li.current{
+    color: black;
+  }
+  .pro-wrap .tab-content{
+    display: none;
+  }
+  .pro-wrap .tab-content.current{
+    display: block;
+  }
+  #tab-1 .tab-con{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+  }
+  #tab-1 .tab-con .myinfo{
+    margin-top: 50px;
+    text-align: left;
+  }
+  .profile-right .right2{
+    padding: 0;
+  }
+  .profile-right{
+    width: auto;
+  }
+}
+
+@media screen and ( max-width: 770px ) {
+  .bl-main>.first{
+    top: 60%;
+  }
+  .bl-main>.second{
+    top: 60%;
+  }
+}
+
+@media screen and ( max-width: 520px ) {
+  .profile-left .pro-img img{
+    width: 170px;
+  }
 }

@@ -89,16 +89,14 @@ div.bl-panel-items > div > div {
 	opacity: 0;
 	pointer-events: none;
 	position: absolute;
-	width: 1400px;
-	margin: 0 auto;
 	top: 20%;
-	left: 30px;
-	right: 30px;
+	left: 10px;
+	right: 10px;
 	bottom: 30px;
-	padding: 0 20px;
 	overflow: hidden;
 	overflow-y: auto;
 	-webkit-overflow-scrolling: touch;
+	white-space: normal;
 }
 
 /* Custom content */
@@ -111,6 +109,7 @@ div.bl-panel-items > div > div {
 }
 
 .bl-content h2 {
+	width: 100%;
 	margin: 0 0 50px 0;
 	text-align: center;
 }
@@ -133,18 +132,18 @@ div.bl-panel-items > div > div {
 }
 
 .bl-content > ul {
-width: 1400px;
+max-width: 1400px;
 margin: 0 auto;
 display: flex;
-justify-content: space-around;
+justify-content: center;
 flex-wrap: wrap;
-flex-grow: 0;
-flex-shrink: 0;
+white-space: normal;
 }
 
 .bl-content > ul li {
-	width: 250px;
+	width: 260px;
 	margin: 10px;
+	white-space: normal;
 }
 
 
