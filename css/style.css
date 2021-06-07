@@ -74,7 +74,7 @@
 }
 
 .profile-left .pro-img img {
-  width: 200px;
+  width: 190px;
   height: auto;
 }
 
@@ -97,11 +97,11 @@
 .profile-right {
   width: 550px;
   text-align: left;
-  line-height: 35px;
+  line-height: 30px;
 }
 
 .profile-right .edu {
-  padding-bottom: 10px;
+  padding-bottom: 5px;
 }
 
 .profile-right .edu b {
@@ -109,11 +109,11 @@
 }
 
 .profile-right .right2 {
-  padding-top: 10px;
+  padding-top: 5px;
 }
 
 .profile-right .right2 .myinfo {
-  margin-bottom: 10px;
+  margin-bottom: 5px;
 }
 
 .myinfo .kakao {
@@ -143,7 +143,7 @@
 }
 
 .profile-right .right2 .story {
-  padding-top: 10px;
+  padding-top: 5px;
 }
 
 .profile-right .right2 .story .three {
@@ -504,22 +504,30 @@ div.bl-panel-items.bl-panel-items-show nav span.cancel:hover {
   }
   .profile-right{
     width: auto;
-    line-height: 30px;
   }
 }
 
 @media screen and ( max-width: 770px ) {
+  .bl-main > section{
+    height: 40%;
+  }
   .bl-main>.first{
     top: 60%;
   }
   .bl-main>.second{
     top: 60%;
   }
+  .bl-content, div.bl-panel-items > div > div{
+    max-width: 770px;
+  }
   #tab-1 .tab-con{
     justify-content: center;
   }
   #tab-1 .tab-con .pro-img{
     padding-right: 40px;
+  }
+  .profile{
+    height: 60%;
   }
   .profile-right .right2 .story .hello{
     width: 25px;
@@ -528,6 +536,21 @@ div.bl-panel-items.bl-panel-items-show nav span.cancel:hover {
 }
 
 @media screen and ( max-width: 520px ) {
+  .bl-main > section{
+    height: 30%;
+  }
+  .bl-main>.first{
+    top: 70%;
+  }
+  .bl-main>.second{
+    top: 70%;
+  }
+  .tabs{
+    top: 54%; 
+  }
+  .bl-content, div.bl-panel-items > div > div{
+    max-width: 770px;
+  }
   .profile a>img{
     width: 70px;
   }
