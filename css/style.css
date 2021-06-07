@@ -452,7 +452,7 @@ div.bl-panel-items.bl-panel-items-show nav span.cancel:hover {
   .profile .wrap{
     max-width: 850px;
     width: 100%;
-    padding-top: 100px;
+    padding-top: 70px;
   }
   .profile .wrap .page{
     position: relative;
@@ -464,6 +464,7 @@ div.bl-panel-items.bl-panel-items-show nav span.cancel:hover {
     width: 100%;
   }
 .tabs{
+  max-width: 850px;
     width: 100%;
     height: 30px;
     line-height: 30px;
@@ -471,7 +472,7 @@ div.bl-panel-items.bl-panel-items-show nav span.cancel:hover {
     display: flex;
     justify-content: center;
     align-items: center;
-    top: 53.5%;
+    top: 51%;
     cursor: pointer;
   }
  .tabs li{
@@ -503,6 +504,7 @@ div.bl-panel-items.bl-panel-items-show nav span.cancel:hover {
   }
   .profile-right{
     width: auto;
+    line-height: 30px;
   }
 }
 
@@ -513,10 +515,26 @@ div.bl-panel-items.bl-panel-items-show nav span.cancel:hover {
   .bl-main>.second{
     top: 60%;
   }
+  #tab-1 .tab-con{
+    justify-content: center;
+  }
+  #tab-1 .tab-con .pro-img{
+    padding-right: 40px;
+  }
+  .profile-right .right2 .story .hello{
+    width: 25px;
+    height: 25px;
+  }
 }
 
 @media screen and ( max-width: 520px ) {
+  .profile a>img{
+    width: 70px;
+  }
   .profile-left .pro-img img{
-    width: 170px;
+    width: 150px;
+  }
+  .profile-right{
+    line-height: 23px;
   }
 }
