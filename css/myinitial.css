@@ -63,12 +63,12 @@ flex-direction: column-reverse;
 flex-wrap: nowrap;
 
 플렉스 컨테이너에 적용. 감싸기(줄바꿈) 설정. 확인 결과 안드로이드 2.1~4.3 아래 속성 지원 안 함.
-<del>-webkit-box-lines: multiple;</del>
+-webkit-box-lines: multiple;
 -ms-flex-wrap: wrap;
 flex-wrap: wrap;
 
 플렉스 아이템에 적용. 아이템 정렬 순서 설정. 확인 결과 안드로이드 2.1~4.3 아래 속성 지원 안 함.
-<del>-webkit-box-ordinal-group: 1;</del>
+-webkit-box-ordinal-group: 1;
 -ms-flex-order: 1;
 order: 1;
 
@@ -101,6 +101,8 @@ align-items: stretch;
 -webkit-box-align: baseline;
 -ms-flex-align: baseline;
 align-items: baseline; */
+
+
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Monoton&display=swap');
 @font-face {
@@ -212,6 +214,11 @@ select::-ms-expand { display: none; }
 
 ul, ol, li { list-style: none; }
 
+li:focus{  appearance:none;-webkit-appearance: none;
+   -webkit-border-radius: 0;}
+
+a { -webkit-tap-highlight-color:transparent;}
+
 input { font-family: inherit; -webkit-appearance: none; -moz-appearance: none; appearance: none; }
 
 input::-ms-clear { display: none; }
@@ -238,9 +245,16 @@ button,
 select,
 textarea{-webkit-border-radius:0;-webkit-appearance:none;}
 
-input, textarea, button {-webkit-appearance:none; -moz-appearance:none; appearance:none;}
+input, textarea, button, li {-webkit-appearance:none; -moz-appearance:none; appearance:none;}
 
 input, textarea, button, select {-webkit-border-radius:0; -moz-border-radius:0; -o-border-radius:0; border-radius:0;}
+
+input:focus{ outline: none;-webkit-border-radius:0;-webkit-appearance:none;}
+button:focus{ outline: none;-webkit-border-radius:0;-webkit-appearance:none;}
+
+.swiper-button-next{outline: none;-webkit-border-radius:0;-webkit-appearance:none;}
+.swiper-button-prev{outline: none;-webkit-border-radius:0;-webkit-appearance:none;}
+.swiper-pagination{outline: none;-webkit-border-radius:0;-webkit-appearance:none;}
 
 /* 폰트 컬러 */
 .c-black{color:#000000;}

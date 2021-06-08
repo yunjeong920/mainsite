@@ -6,10 +6,13 @@
 	<meta charset="UTF-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, maximum-scale=1.0, minimum-scale=1.0" />
 	<link rel="stylesheet" href="./css/myinitial.css">
+	<link rel="stylesheet" href="./css/swiper.min.css">
 	<link rel="stylesheet" href="./css/style.css">
 	<link rel="stylesheet" href="./css/media.css">
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0/jquery.min.js"></script>
+	<script type="text/javascript" src="./js/swiper.min.js"></script>
 	<script type="text/javascript" src="./js/common.js"></script>
+	<script type="text/javascript" src="./js/slide.js"></script>
 </head>
 
 <body>
@@ -71,17 +74,21 @@
 									<img src="./img/icon/yun01.png" alt="">
 								</div>
 								<div class="pro-txt">
-									<p class="fs-20">안녕하세요!</p>
-									<p class="fs-20">웹 퍼블리셔 이윤정입니다.</p>
+									<p class="fs-18">안녕하세요!</p>
+									<p class="fs-18">웹 퍼블리셔 이윤정입니다.</p>
 									<div class="myinfo">
-										<p class="fs-18">생년월일 : <span class="fs-16">1996.09.20</span></p>
-										<p class="fs-18 kakao">카카오톡 오픈톡 :
-										<p class="fs-18 btn"><a href="#ex1" rel="modal:open" class="button fs-26">✉</a></p>
+										<p class="fs-16">생년월일 : <span class="fs-16">1996.09.20</span></p>
+										<p class="fs-16 kakao">카카오톡 오픈톡 :
+										<p class="fs-16 btn"><a href="#ex1" rel="modal:open" class="button fs-26">✉</a></p>
 										</p>
 									</div>
 								</div>
 							</div>
 						</div>
+						<ul class="tabs">
+							<li class="tab-link fs-30 current" data-tab="tab-1"><</li>
+							<li class="tab-link fs-30" data-tab="tab-2">></li>
+						</ul>
 						<div id="tab-2" class="tab-content profile-right">
 							<div class="edu">
 								<p><b class="fs-16">교육</b></p>
@@ -93,8 +100,8 @@
 									<img src="./img/icon/Kakao.png" alt="">
 								</div>
 								<div class="story">
-									<p class="fs-16">직관적이고 섬세하며, 모든 이들이 편하게 사용할 수 있는 웹을 만들기 위해</p>
-									<p class="fs-16">제자리에 있지 않고 발전하기 위해 노력하고 있습니다.</p>
+									<p class="fs-16">직관적이고 섬세하며, 모든 이들이 편하게 사용할 수 있는 웹을 만들기 위해
+									제자리에 있지 않고 발전하기 위해 노력하고 있습니다.</p>
 									<p class="fs-16 three">제 포트폴리오 페이지에 오신걸 환영합니다!
 									<div class="hello"></div>
 									</p>
@@ -102,10 +109,6 @@
 							</div>
 						</div>
 					</div>
-					<ul class="tabs">
-						<li class="tab-link fs-30 current" data-tab="tab-1"><</li>
-						<li class="tab-link fs-30" data-tab="tab-2">></li>
-					</ul>
 				</div>
 			</div>
 		</section>
@@ -117,22 +120,22 @@
 					<img src="./img/icon/portfolio1.png" alt="">
 					<h2 class="bl-icon bl-icon-works fs-26">PORTFOLIO</h2>
 				</div>
-					<div class="bl-content content2">
-						<h2 class="fs-32 letter">MY PORTFOLIO</h2>
-						<!-- <p></p> -->
-						<ul id="bl-work-items">
-							<li data-panel="panel-1"><a href="#"><img src="./img/portfolio/port-img01.png" /></a></li>
-							<li data-panel="panel-2"><a href="#"><img src="./img/portfolio/port-img02.png" /></a></li>
-							<li data-panel="panel-3"><a href="#"><img src="./img/portfolio/port-img03.png" /></a></li>
-							<li data-panel="panel-4"><a href="#"><img src="./img/portfolio/port-img04.png" /></a></li>
-							<li data-panel="panel-5"><a href="#"><img src="./img/portfolio/port-img05.png" /></a></li>
-							<li data-panel="panel-6"><a href="#"><img src="./img/portfolio/port-img06.png" /></a></li>
-							<li data-panel="panel-7"><a href="#"><img src="./img/portfolio/port-img07.png" /></a></li>
-							<li data-panel="panel-8"><a href="#"><img src="./img/portfolio/port-img08.png" /></a></li>
-							<li data-panel="panel-9"><a href="#"><img src="./img/portfolio/port-img09.png" /></a></li>
-							<li data-panel="panel-10"><a href="#"><img src="./img/portfolio/port-img10.png" /></a></li>
-						</ul>
-					</div>
+				<div class="bl-content content2">
+					<h2 class="fs-32 letter">MY PORTFOLIO</h2>
+					<!-- <p></p> -->
+					<ul id="bl-work-items">
+						<li data-panel="panel-1"><a href="#"><img src="./img/portfolio/port-img01.png" /></a></li>
+						<li data-panel="panel-2"><a href="#"><img src="./img/portfolio/port-img02.png" /></a></li>
+						<li data-panel="panel-3"><a href="#"><img src="./img/portfolio/port-img03.png" /></a></li>
+						<li data-panel="panel-4"><a href="#"><img src="./img/portfolio/port-img04.png" /></a></li>
+						<li data-panel="panel-5"><a href="#"><img src="./img/portfolio/port-img05.png" /></a></li>
+						<li data-panel="panel-6"><a href="#"><img src="./img/portfolio/port-img06.png" /></a></li>
+						<li data-panel="panel-7"><a href="#"><img src="./img/portfolio/port-img07.png" /></a></li>
+						<li data-panel="panel-8"><a href="#"><img src="./img/portfolio/port-img08.png" /></a></li>
+						<li data-panel="panel-9"><a href="#"><img src="./img/portfolio/port-img09.png" /></a></li>
+						<li data-panel="panel-10"><a href="#"><img src="./img/portfolio/port-img10.png" /></a></li>
+					</ul>
+				</div>
 				<span class="bl-icon bl-icon-close"><img src="./img/icon/cancel.png" alt=""></span>
 			</section>
 
@@ -148,7 +151,7 @@
 								<h3 class="fs-32 letter">MY SKILL</h3>
 								<div class="skillset">
 									<div class="skill">
-										<div class="title">PHOTOSHOP</div>
+										<div class="title fs-18">PHOTOSHOP</div>
 										<div class="bar">
 											<div class="inner-bar"></div>
 											<span class="percentage">90%</span>
@@ -156,7 +159,7 @@
 									</div>
 
 									<div class="skill">
-										<div class="title">XD</div>
+										<div class="title fs-18">XD</div>
 										<div class="bar">
 											<div class="inner-bar"></div>
 											<span class="percentage">90%</span>
@@ -164,7 +167,7 @@
 									</div>
 
 									<div class="skill">
-										<div class="title">HTML5</div>
+										<div class="title fs-18">HTML5</div>
 										<div class="bar">
 											<div class="inner-bar"></div>
 											<span class="percentage">90%</span>
@@ -172,7 +175,7 @@
 									</div>
 
 									<div class="skill">
-										<div class="title">CSS3</div>
+										<div class="title fs-18">CSS3</div>
 										<div class="bar">
 											<div class="inner-bar"></div>
 											<span class="percentage">90%</span>
@@ -180,7 +183,7 @@
 									</div>
 
 									<div class="skill">
-										<div class="title">JAVASCRIPT</div>
+										<div class="title fs-18">JAVASCRIPT</div>
 										<div class="bar">
 											<div class="inner-bar"></div>
 											<span class="percentage">60%</span>
@@ -188,7 +191,7 @@
 									</div>
 
 									<div class="skill">
-										<div class="title">JQUERY</div>
+										<div class="title fs-18">JQUERY</div>
 										<div class="bar">
 											<div class="inner-bar"></div>
 											<span class="percentage">75%</span>
@@ -196,7 +199,7 @@
 									</div>
 
 									<div class="skill">
-										<div class="title">SASS</div>
+										<div class="title fs-18">SASS</div>
 										<div class="bar">
 											<div class="inner-bar"></div>
 											<span class="percentage">90%</span>
@@ -215,7 +218,7 @@
 
 			<div class="bl-panel-items" id="bl-panel-work-items">
 				<div data-panel="panel-1">
-					<div class="panel-wrap">
+					<div class="panel-wrap pcpanel">
 						<div class="panel-img">
 							<img src="./img/portfolio/port-img01.png" alt="">
 						</div>
@@ -238,13 +241,51 @@
 							</div>
 							<div class="site-btn">
 								<a href="#" class="site fs-16">사이트 바로가기</a>
-								<a href="#" class="site fs-16">GitHub 바로가기</a>
+								<a href="#" class="site fs-16">Git 바로가기</a>
 							</div>
 						</div>
 					</div>
+
+					<div class="panel-wrap mobilepanel">
+						<div class="swiper-container firstSwiper">
+							<div class="swiper-wrapper">
+								<div class="swiper-slide panel-img">
+									<img src="./img/portfolio/port-img01.png" alt="">
+								</div>
+								<div class="swiper-slide text-box">
+									<div class="slide-text">
+										<div class="panel-text">
+											<h2 class="fs-24 fw-600">레스토랑 오늘</h2>
+											<span style="background: #c27a34;"></span>
+											<h6 class="fs-16">반응형 홈페이지</h6>
+											<div class="text2">
+												<span class="fs-16 use">USE</span><br>
+												<span class="fs-16">HTML&nbsp;&nbsp; । &nbsp;&nbsp;CSS3&nbsp;&nbsp; । &nbsp;&nbsp;SWIPER&nbsp;&nbsp;</span>
+											</div>
+										</div>
+										<div class="site-color">
+											<h6 class="fs-16">Color</h6>
+											<div class="color-look">
+												<span class="color1" style="background: #c27a34;"></span>
+												<span class="color1" style="background: #ffffff;"></span>
+											</div>
+										</div>
+										<div class="site-btn">
+											<a href="#" class="site fs-16">사이트 바로가기</a>
+											<a href="#" class="site fs-16">Git 바로가기</a>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="swiper-button-next"></div>
+							<div class="swiper-button-prev"></div>
+						</div>
+					</div>
+
 				</div>
+
 				<div data-panel="panel-2">
-					<div class="panel-wrap">
+					<div class="panel-wrap pcpanel">
 						<div class="panel-img">
 							<img src="./img/portfolio/port-img02.png" alt="">
 						</div>
@@ -268,13 +309,50 @@
 							</div>
 							<div class="site-btn">
 								<a href="#" class="site fs-16">사이트 바로가기</a>
-								<a href="#" class="site fs-16">GitHub 바로가기</a>
+								<a href="#" class="site fs-16">Git 바로가기</a>
 							</div>
+						</div>
+					</div>
+
+					<div class="panel-wrap mobilepanel">
+						<div class="swiper-container firstSwiper">
+							<div class="swiper-wrapper">
+								<div class="swiper-slide panel-img">
+									<img src="./img/portfolio/port-img02.png" alt="">
+								</div>
+								<div class="swiper-slide text-box">
+									<div class="slide-text">
+										<div class="panel-text">
+											<h2 class="fs-24 fw-600">STARBUCKS</h2>
+											<span style="background: #624e45;"></span>
+											<h6 class="fs-16">반응형 홈페이지</h6>
+											<div class="text2">
+												<span class="fs-16 use">USE</span><br>
+												<span class="fs-16">HTML&nbsp;&nbsp; । &nbsp;&nbsp;CSS3&nbsp;&nbsp; । &nbsp;&nbsp;SWIPER&nbsp;&nbsp;</span>
+											</div>
+										</div>
+										<div class="site-color">
+											<h6 class="fs-16">Color</h6>
+											<div class="color-look">
+												<span class="color1" style="background: #f6f5ef;"></span>
+												<span class="color1" style="background: #f4ef64;"></span>
+												<span class="color1" style="background: #624e45;"></span>
+											</div>
+										</div>
+										<div class="site-btn">
+											<a href="#" class="site fs-16">사이트 바로가기</a>
+											<a href="#" class="site fs-16">Git 바로가기</a>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="swiper-button-next"></div>
+							<div class="swiper-button-prev"></div>
 						</div>
 					</div>
 				</div>
 				<div data-panel="panel-3">
-					<div class="panel-wrap">
+					<div class="panel-wrap pcpanel">
 						<div class="panel-img">
 							<img src="./img/portfolio/port-img03.png" alt="">
 						</div>
@@ -297,13 +375,49 @@
 							</div>
 							<div class="site-btn">
 								<a href="#" class="site fs-16">사이트 바로가기</a>
-								<a href="#" class="site fs-16">GitHub 바로가기</a>
+								<a href="#" class="site fs-16">Git 바로가기</a>
 							</div>
+						</div>
+					</div>
+
+					<div class="panel-wrap mobilepanel">
+						<div class="swiper-container firstSwiper">
+							<div class="swiper-wrapper">
+								<div class="swiper-slide panel-img">
+									<img src="./img/portfolio/port-img03.png" alt="">
+								</div>
+								<div class="swiper-slide text-box">
+									<div class="slide-text">
+										<div class="panel-text">
+											<h2 class="fs-24 fw-600">네이버 웨일</h2>
+											<span style="background: #5edfcd"></span>
+											<h6 class="fs-16">반응형 홈페이지</h6>
+											<div class="text2">
+												<span class="fs-16 use">USE</span><br>
+												<span class="fs-16">HTML&nbsp;&nbsp; । &nbsp;&nbsp;JAVASCRIPT&nbsp;&nbsp; । &nbsp;&nbsp;JQUERY&nbsp;&nbsp; <br>SCSS&nbsp;&nbsp; । &nbsp;&nbsp;SWIPER&nbsp;&nbsp;</span>
+											</div>
+										</div>
+										<div class="site-color">
+											<h6 class="fs-16">Color</h6>
+											<div class="color-look">
+												<span class="color1" style="background: #5edfcd"></span>
+												<span class="color1" style="background: #ffffff;"></span>
+											</div>
+										</div>
+										<div class="site-btn">
+											<a href="#" class="site fs-16">사이트 바로가기</a>
+											<a href="#" class="site fs-16">Git 바로가기</a>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="swiper-button-next"></div>
+							<div class="swiper-button-prev"></div>
 						</div>
 					</div>
 				</div>
 				<div data-panel="panel-4">
-					<div class="panel-wrap">
+					<div class="panel-wrap pcpanel">
 						<div class="panel-img">
 							<img src="./img/portfolio/port-img04.png" alt="">
 						</div>
@@ -327,13 +441,50 @@
 							</div>
 							<div class="site-btn">
 								<a href="#" class="site fs-16">사이트 바로가기</a>
-								<a href="#" class="site fs-16">GitHub 바로가기</a>
+								<a href="#" class="site fs-16">Git 바로가기</a>
 							</div>
+						</div>
+					</div>
+
+					<div class="panel-wrap mobilepanel">
+						<div class="swiper-container firstSwiper">
+							<div class="swiper-wrapper">
+								<div class="swiper-slide panel-img">
+									<img src="./img/portfolio/port-img04.png" alt="">
+								</div>
+								<div class="swiper-slide text-box">
+									<div class="slide-text">
+										<div class="panel-text">
+											<h2 class="fs-24 fw-600">SSG.COM</h2>
+											<span style="background: linear-gradient(152deg, #d0e6f9, #f6e5ff);"></span>
+											<h6 class="fs-16">반응형 홈페이지</h6>
+											<div class="text2">
+												<span class="fs-16 use">USE</span><br>
+												<span class="fs-16">HTML&nbsp;&nbsp; । &nbsp;&nbsp;JAVASCRIPT&nbsp;&nbsp; । &nbsp;&nbsp;JQUERY&nbsp;&nbsp; <br>SCSS&nbsp;&nbsp; । &nbsp;&nbsp;Kakao API&nbsp;&nbsp;</span>
+											</div>
+										</div>
+										<div class="site-color">
+											<h6 class="fs-16">Color</h6>
+											<div class="color-look">
+												<span class="color1" style="background: #d0e6f9"></span>
+												<span class="color1" style="background: #f6e5ff;"></span>
+												<span class="color1" style="background: #222222;"></span>
+											</div>
+										</div>
+										<div class="site-btn">
+											<a href="#" class="site fs-16">사이트 바로가기</a>
+											<a href="#" class="site fs-16">Git 바로가기</a>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="swiper-button-next"></div>
+							<div class="swiper-button-prev"></div>
 						</div>
 					</div>
 				</div>
 				<div data-panel="panel-5">
-					<div class="panel-wrap">
+					<div class="panel-wrap pcpanel">
 						<div class="panel-img">
 							<img src="./img/portfolio/port-img05.png" alt="">
 						</div>
@@ -357,13 +508,50 @@
 							</div>
 							<div class="site-btn">
 								<a href="#" class="site fs-16">사이트 바로가기</a>
-								<a href="#" class="site fs-16">GitHub 바로가기</a>
+								<a href="#" class="site fs-16">Git 바로가기</a>
 							</div>
+						</div>
+					</div>
+
+					<div class="panel-wrap mobilepanel">
+						<div class="swiper-container firstSwiper">
+							<div class="swiper-wrapper">
+								<div class="swiper-slide panel-img">
+									<img src="./img/portfolio/port-img05.png" alt="">
+								</div>
+								<div class="swiper-slide text-box">
+									<div class="slide-text">
+										<div class="panel-text">
+											<h2 class="fs-24 fw-600">카카오 뱅크</h2>
+											<span style="background: #3e4459;"></span>
+											<h6 class="fs-16">고정형 홈페이지</h6>
+											<div class="text2">
+												<span class="fs-16 use">USE</span><br>
+												<span class="fs-16">HTML&nbsp;&nbsp; । &nbsp;&nbsp;JAVASCRIPT&nbsp;&nbsp; । &nbsp;&nbsp;JQUERY&nbsp;&nbsp; <br>SCSS&nbsp;&nbsp; । &nbsp;&nbsp;SWIPER&nbsp;&nbsp; । &nbsp;&nbsp;Kakao API&nbsp;&nbsp;</span>
+											</div>
+										</div>
+										<div class="site-color">
+											<h6 class="fs-16">Color</h6>
+											<div class="color-look">
+												<span class="color1" style="background: #ffffff"></span>
+												<span class="color1" style="background: #3e4459;"></span>
+												<span class="color1" style="background: #222222;"></span>
+											</div>
+										</div>
+										<div class="site-btn">
+											<a href="#" class="site fs-16">사이트 바로가기</a>
+											<a href="#" class="site fs-16">Git 바로가기</a>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="swiper-button-next"></div>
+							<div class="swiper-button-prev"></div>
 						</div>
 					</div>
 				</div>
 				<div data-panel="panel-6">
-					<div class="panel-wrap">
+					<div class="panel-wrap pcpanel">
 						<div class="panel-img">
 							<img src="./img/portfolio/port-img06.png" alt="">
 						</div>
@@ -373,7 +561,7 @@
 					</div>
 				</div>
 				<div data-panel="panel-7">
-					<div class="panel-wrap">
+					<div class="panel-wrap pcpanel">
 						<div class="panel-img">
 							<img src="./img/portfolio/port-img07.png" alt="">
 						</div>
@@ -383,7 +571,7 @@
 					</div>
 				</div>
 				<div data-panel="panel-8">
-					<div class="panel-wrap">
+					<div class="panel-wrap pcpanel">
 						<div class="panel-img">
 							<img src="./img/portfolio/port-img08.png" alt="">
 						</div>
@@ -393,7 +581,7 @@
 					</div>
 				</div>
 				<div data-panel="panel-9">
-					<div class="panel-wrap">
+					<div class="panel-wrap pcpanel">
 						<div class="panel-img">
 							<img src="./img/portfolio/port-img09.png" alt="">
 						</div>
@@ -403,7 +591,7 @@
 					</div>
 				</div>
 				<div data-panel="panel-10">
-					<div class="panel-wrap">
+					<div class="panel-wrap pcpanel">
 						<div class="panel-img">
 							<img src="./img/portfolio/port-img10.png" alt="">
 						</div>
@@ -418,6 +606,7 @@
 					<span class="bl-icon bl-icon-close cancel">CANCEL</span>
 				</nav>
 			</div>
+
 
 		</div>
 	</div><!-- /container -->
