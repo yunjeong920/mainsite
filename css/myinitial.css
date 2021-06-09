@@ -378,8 +378,6 @@ button:focus{ outline: none;-webkit-border-radius:0;-webkit-appearance:none;}
 .fs-100 { font-size: 100px; }
 
 @media all and (max-width: 1200px) {
-	.fs-10 { font-size: 8px; }
-  .fs-12 { font-size: 10px; }
   .fs-14 { font-size: 12px; }
   .fs-16 { font-size: 14px; }
   .fs-18 { font-size: 16px; }
@@ -427,10 +425,6 @@ button:focus{ outline: none;-webkit-border-radius:0;-webkit-appearance:none;}
   }
 
 @media all and (max-width: 600px) {
-	.fs-10 { font-size: 7px; }
-  .fs-12 { font-size: 8px; }
-  .fs-14 { font-size: 9px; }
-  .fs-16 { font-size: 10px; }
   .fs-18 { font-size: 12px; }
   .fs-20 { font-size: 13px; }
   .fs-22 { font-size: 14px; }
@@ -475,14 +469,7 @@ button:focus{ outline: none;-webkit-border-radius:0;-webkit-appearance:none;}
   .fs-100 { font-size: 65px; }
    }
 
-/* @media all and (max-width: 500px) {
-	.fs-10 { font-size: 5px; }
-  .fs-12 { font-size: 6px; }
-  .fs-14 { font-size: 7px; }
-  .fs-16 { font-size: 8px; }
-  .fs-18 { font-size: 9px; }
-  .fs-20 { font-size: 10px; }
-  .fs-22 { font-size: 11px; }
+@media all and (max-width: 500px) {
   .fs-24 { font-size: 12px; }
   .fs-26 { font-size: 13px; }
   .fs-28 { font-size: 14px; }
@@ -522,7 +509,7 @@ button:focus{ outline: none;-webkit-border-radius:0;-webkit-appearance:none;}
   .fs-96 { font-size: 48px; }
   .fs-98 { font-size: 49px; }
   .fs-100 { font-size: 50px; }
-   } */
+   }
 
 /*font-Weight*/
 .fw-100 { font-weight: 100; }

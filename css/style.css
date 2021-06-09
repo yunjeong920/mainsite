@@ -224,7 +224,11 @@ div.bl-panel-items>div>div.mobilepanel {
   color: #222;
   font-weight: 600;
   margin: 0;
-  margin-bottom: 50px;
+  margin-bottom: 20px;
+}
+
+.about h4{
+  margin-bottom: 30px;
 }
 
 /* .about p {
