@@ -23,6 +23,10 @@ body {
   display: none;
 }
 
+.blocker{
+  height: 100vh;
+}
+
 .mobile {
   display: none;
 }
