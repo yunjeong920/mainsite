@@ -37,7 +37,7 @@ div.bl-panel-items>div>div.mobilepanel {
 
 .container {
   width: 100%;
-  height: 100vh;
+  height: 100%;
   position: absolute;
   overflow: hidden;
 }
@@ -511,51 +511,78 @@ div.bl-panel-items.bl-panel-items-show nav span.cancel:hover {
     display: block;
   }
 
-  .swiper-container {
-    width: 100%;
-    height: 100%;
-  }
-
   div.bl-panel-items>div>div img {
     margin: 0;
-  }
-
-  .swiper-slide {
-    text-align: center;
-    font-size: 18px;
-    background: #fff;
-    /* Center slide text vertically */
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: -webkit-flex;
-    display: flex;
-    flex-direction: column;
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    -webkit-justify-content: center;
-    justify-content: center;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    -webkit-align-items: center;
-    align-items: center;
-  }
-
-  .swiper-slide img {
-    display: block;
-    height: auto;
-    object-fit: cover;
   }
 
   div.bl-panel-items>div>div img {
     max-width: 400px;
   }
-
-  .swiper-button-next, .swiper-button-prev {
-    background-size: 14px;
+  .bl-content, div.bl-panel-items>div>div{
+    flex-direction: column;
   }
 
-  .slide-text {
-    text-align: left;
+  div.bl-panel-items>div>div img{
+    max-width: 300px;
+  }
+  .panel-wrap .panel-img{
+    width: auto;
+  }
+  div.bl-panel-items.bl-panel-items-show nav{
+    top: -100px;
+  }
+  .bl-content, div.bl-panel-items > div > div{
+    top: 10%;
+    height: 680px;
+  }
+  .bl-content, div.bl-panel-items > div > div.skill{
+    top: 20%;
+  }
+  .panel-wrap .text-box{
+    width: 300px;
+  }
+  .panel-wrap .text-box .panel-text>span{
+    width: 50px;
+    display: inline-block;
+    margin-right: 0;
+  }
+  .site-color .color-look{
+    align-items: center;
+  }
+  .site-color .color1:last-child{
+    margin-right: 0;
+  }
+
+  .panel-wrap{
+    justify-content: center;
+  }
+
+  .panel-wrap .text-box .panel-text h2 {
+    padding-bottom: 8px;
+  }
+
+  .panel-wrap .text-box .panel-text h6 {
+    padding-top: 10px;
+    padding-bottom: 8px;
+  }
+
+  .panel-wrap .text-box .panel-text .text2 {
+    margin-bottom: 8px;
+  }
+
+  .site-color {
+    padding-bottom: 0;
+  }
+
+  .site-btn{
+    text-align: center;
+  }
+
+  .site-btn .site {
+    width: 140px;
+    height: 40px;
+    line-height: 40px;
+    margin-top: 20px;
   }
 
   .profile a>img {
@@ -575,7 +602,11 @@ div.bl-panel-items.bl-panel-items-show nav span.cancel:hover {
 
   .profile .wrap .page .pro-wrap {
     justify-content: center;
-    height: 200px;
+    height: 250px;
+  }
+
+  .pro-wrap .tab-content.current{
+    width: 500px;
   }
 
   .pro-wrap {
@@ -645,9 +676,6 @@ div.bl-panel-items.bl-panel-items-show nav span.cancel:hover {
   .about .skill .bar {
     width: 500px;
   }
-  div.bl-panel-items>div>div.mobilepanel {
-    top: 10%;
-  }
 }
 
 @media screen and (max-width: 770px) {
@@ -661,6 +689,33 @@ div.bl-panel-items.bl-panel-items-show nav span.cancel:hover {
 
   .bl-main>.second {
     top: 60%;
+  }
+
+  div.bl-panel-items>div>div img {
+    max-width: 250px;
+  }
+
+.panel-wrap .text-box{
+  width: 250px;
+}
+
+.site-btn .site{
+  width: 115px;
+}
+
+  .panel-wrap .text-box .panel-text h2{
+    padding-bottom: 6px;
+  }
+
+  .panel-wrap .text-box .panel-text h6{
+    padding-top: 7px;
+    padding-bottom: 6px;
+  }
+  .panel-wrap .text-box .panel-text .use{
+    margin-bottom: 6px;
+  }
+  .panel-wrap .text-box .panel-text .text2{
+    margin-bottom: 6px;
   }
 
   .bl-content, div.bl-panel-items>div>div {
@@ -687,8 +742,9 @@ div.bl-panel-items.bl-panel-items-show nav span.cancel:hover {
     height: auto;
   }
   .profile .wrap .page .pro-wrap{
-    max-width: 250px;
+    max-width: 330px;
     margin: 0 auto;
+    margin-top: 20px;
   }
 
   .profile .wrap .page {
@@ -703,12 +759,6 @@ div.bl-panel-items.bl-panel-items-show nav span.cancel:hover {
     width: 25px;
     height: 25px;
   }
-
-  .site-btn .site {
-    width: 110px;
-    height: 40px;
-    line-height: 40px;
-  }
 }
 
 @media screen and (max-width: 700px) {
@@ -719,35 +769,10 @@ div.bl-panel-items.bl-panel-items-show nav span.cancel:hover {
   .about .skill .bar {
     width: 300px;
   }
-
-  div.bl-panel-items>div>div img {
-    max-width: 300px;
+  div.bl-panel-items.bl-panel-items-show nav{
+    top: -60px;
   }
 
-  div.bl-panel-items>div>div.mobilepanel {
-    top: 15%;
-  }
-
-  .panel-wrap .text-box .panel-text h2 {
-    padding-bottom: 15px;
-  }
-
-  .panel-wrap .text-box .panel-text>span {
-    width: 50px;
-  }
-
-  .panel-wrap .text-box .panel-text h6 {
-    padding-top: 18px;
-    padding-bottom: 15px;
-  }
-
-  .panel-wrap .text-box .panel-text .text2 {
-    margin-bottom: 15px;
-  }
-
-  .site-color {
-    padding-bottom: 15px;
-  }
 }
 
 @media screen and (max-width: 520px) {
@@ -764,7 +789,8 @@ div.bl-panel-items.bl-panel-items-show nav span.cancel:hover {
   }
 
   .bl-content, div.bl-panel-items>div>div {
-    max-width: 770px;
+    max-width: 520px;
+    justify-content: flex-start;
   }
 
   .profile a>img {
@@ -782,8 +808,7 @@ div.bl-panel-items.bl-panel-items-show nav span.cancel:hover {
   .about .skill .bar {
     width: 180px;
   }
-
-  div.bl-panel-items>div>div img{
-    max-width: 230px;
+  div.bl-panel-items.bl-panel-items-show nav{
+    top: -60px;
   }
 }
