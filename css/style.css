@@ -15,6 +15,10 @@
   font-style: normal;
 }
 
+.roding{
+  visibility: hidden;
+}
+
 body {
   -ms-overflow-style: none;
 }
@@ -224,7 +228,7 @@ div.bl-panel-items>div>div.mobilepanel {
   color: #222;
   font-weight: 600;
   margin: 0;
-  margin-bottom: 20px;
+  margin-bottom: 50px;
 }
 
 .about h4{
