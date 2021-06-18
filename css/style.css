@@ -295,6 +295,7 @@ div.bl-panel-items nav span.bl-next-work {
   height: 40px;
   text-align: center;
   background: #434b56;
+  border: 2px solid #434b56;
   color: #fff;
 }
 
@@ -309,6 +310,7 @@ div.bl-panel-items.bl-panel-items-show nav span.cancel {
   height: 40px;
   text-align: center;
   background: #ccc;
+  border: 2px solid #ccc;
   color: #fff;
 }
 
@@ -394,6 +396,7 @@ div.bl-panel-items.bl-panel-items-show nav span.cancel:hover {
 .panel-wrap .text-box .panel-text h6 {
   padding-top: 23px;
   padding-bottom: 20px;
+  line-height: 30px;
 }
 
 .panel-wrap .text-box .panel-text .use {
@@ -411,7 +414,7 @@ div.bl-panel-items.bl-panel-items-show nav span.cancel:hover {
 }
 
 .site-color {
-  padding-bottom: 20px;
+  padding-bottom: 10px;
 }
 
 .site-color h6 {
